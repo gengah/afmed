@@ -1,0 +1,390 @@
+.home {
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Top Action Bar */
+.top-action-bar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-action-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #5a6c7d;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.action-item:hover {
+  color: #17A2B8;
+}
+
+.brand-title {
+  color: #17A2B8;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.action-icon {
+  width: 32px;
+  height: 32px;
+  color: #17A2B8;
+}
+
+.actions-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Secondary Navigation Bar */
+.secondary-nav {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 120px; /* Adjust based on top-action-bar height */
+  z-index: 999;
+}
+
+.secondary-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proudly-text {
+  color: #17A2B8;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #5a6c7d;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #17A2B8;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 0;
+  background-color: #FFFFFF;
+}
+
+.services-section h1 {
+  color: #17A2B8;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.services-section h2 {
+  color: #17A2B8;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  color: #5a6c7d;
+  font-size: 1.1rem;
+  line-height: 2;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.services-list li:before {
+  content: "•";
+  color: #17A2B8;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+}
+
+/* About Preview Section */
+.about-preview {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.about-preview h2 {
+  color: #17A2B8;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.about-preview p {
+  color: #5a6c7d;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Section */
+.footer-info {
+  background-color: #f8f9fa;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-info .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.footer-column h3 {
+  color: #17A2B8;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #5a6c7d;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-column a:hover {
+  color: #17A2B8;
+}
+
+.phone-link {
+  font-weight: 600;
+  color: #333;
+}
+
+/* App Download Section */
+.app-download {
+  margin-top: 1.5rem;
+}
+
+.app-download ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.app-download li {
+  color: #5a6c7d;
+  padding: 0.3rem 0;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.app-button {
+  display: inline-block;
+}
+
+.app-button img {
+  height: 40px;
+  width: auto;
+}
+
+/* Login Buttons */
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-login {
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-patient-login {
+  background-color: #FFC107;
+  color: #333;
+  border: 2px solid #FFC107;
+}
+
+.btn-patient-login:hover {
+  background-color: #FFB300;
+  border-color: #FFB300;
+}
+
+.btn-physician-login {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border: 2px solid #17A2B8;
+}
+
+.btn-physician-login:hover {
+  background-color: #138496;
+  border-color: #138496;
+}
+
+/* Copyright Footer */
+.copyright-footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.copyright-footer p {
+  color: #5a6c7d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #5a6c7d;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #17A2B8;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  color: #5a6c7d;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #17A2B8;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .top-action-bar .container {
+    gap: 1.5rem;
+  }
+
+  .action-item span {
+    display: none;
+  }
+
+  .main-navigation {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondary-nav .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-action-bar .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-info .container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-buttons {
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section h1 {
+    font-size: 2rem;
+  }
+
+  .services-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
