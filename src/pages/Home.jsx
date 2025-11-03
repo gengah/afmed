@@ -20,7 +20,7 @@ const Home = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h1 className="brand-title">AFMED Family Medicine</h1>
+            <h1 className="brand-title">AFMED HealthCare</h1>
           </motion.div>
 
           <motion.div
